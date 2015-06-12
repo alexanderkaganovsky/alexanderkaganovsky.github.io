@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no" />
+    <title>Alexander Kaganovsky</title>
+    <!-- CSS  -->
+    <link href="//fonts.googleapis.com/css?family=PT Sans Caption&subset=latin" rel="stylesheet" type="text/css" />
+    <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection" />
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav class="light-blue lighten-1" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="#" class="brand-logo"></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biography.html">Biography</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a>
+                        <li><a href="repertoire.html">Repertoire</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="press.html">Press</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <ul id="nav-mobile" class="side-nav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="biography.html">Biography</a></li>
+                    <li><a href="audio.html">Audio</a></li>
+                    <li><a href="video.html">Video</a></li>
+                    <li><a href="repertoire.html">Repertoire</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="press.html">Press</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="mdi-navigation-menu"></i></a>
+            </div>
+        </nav>
+    </div>
+    <main class="section no-pad-bot" id="index-banner">
+        <div class="container">
+            <br>
+            <h1 class="header center">Alexandr Kaganovsky</h1>
+            <br>
+            <div class="row center">
+                <div class="col s12">
+                    <img class="responsive-img class=" avatar " " src="img/Aba-1-finish.png">
+                </div>
+                <div class="col s12">
+                    <div id="player-container">
+                        <div id="player" class="large-12 small-12 small-centered large-centered columns">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="page-footer light-blue lighten-1">
+        <div class="footer-copyright light-blue lighten-1">
+            <div class="container">
+                © 2015 Alexander Kaganovsky Made by <a class="orange-text text-lighten-3" href="http://kaganovskysound.com">Guy Kaganovsky</a>
+            </div>
+        </div>
+    </footer>
+    <!--  Scripts-->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize-min.js"></script>
+       <script>
+            (function() {
+                var script = document.createElement("script");
+
+                script.type = "text/javascript";
+                script.async = true;
+                script.src = "http://sd.toneden.io/production/toneden.loader.js"
+
+                var entry = document.getElementsByTagName("script")[0];
+                entry.parentNode.insertBefore(script, entry);
+            }());
+
+            ToneDenReady = window.ToneDenReady || [];
+            ToneDenReady.push(function() {
+                // Modify the dom and urls parameters to position
+                // your player and select tracks/sets/artists to play.
+                ToneDen.player.create({
+                    dom: "#player",
+                    urls: [
+                        "https://soundcloud.com/alexander-kaganovsky-1/rstrauss-don-quixote-death"
+                    ]
+                });
+            });
+        </script>
+
+</body>
+
+</html>

@@ -1,0 +1,1 @@
+$("#button").submit(function(t){alert("Handler for .submit() called."),t.preventDefault()});
